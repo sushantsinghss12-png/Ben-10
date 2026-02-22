@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ben 10 Alien Showcase</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- FIRST INTERFACE (OMNITRIX SCREEN) -->
+  <div class="start-screen" id="startScreen">
+    <h1 class="start-title">Ben 10 Alien Showcase</h1>
+
+    <img src="images/omnitrix.png" class="omnitrix" id="openAliens" alt="Omnitrix Watch">
+
+    <p class="start-text">Click the Omnitrix to Unlock Aliens</p>
+  </div>
+
+
+  <!-- MAIN WEBSITE INTERFACE -->
+  <div class="main-interface hidden" id="mainInterface">
+
+    <h1>Ben 10 - Top 10 Aliens</h1>
+
+    <!-- SEARCH BAR -->
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search Alien Name..." />
+    </div>
+
+    <div class="slider-wrapper">
+
+      <button class="nav-btn left" id="prevBtn">⟨</button>
+
+      <div class="slider-container">
+        <div class="slider" id="slider"></div>
+      </div>
+
+      <button class="nav-btn right" id="nextBtn">⟩</button>
+
+    </div>
+  </div>
+
+
+  <!-- ALIEN DETAIL POPUP -->
+  <div id="alienDetail" class="alien-detail hidden">
+    <button id="closeDetail">✖</button>
+
+    <div class="detail-content" id="detailBox">
+
+      <div class="detail-left">
+        <img id="detailImg" src="" alt="Alien Image">
+      </div>
+
+      <div class="detail-right">
+        <h2 id="detailName"></h2>
+        <p id="detailDesc"></p>
+        <p id="detailFull"></p>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
